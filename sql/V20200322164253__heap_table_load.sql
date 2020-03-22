@@ -1,3 +1,4 @@
+alter table partition_table rename column new_filed to new_field;
 DO
 $do$
     BEGIN

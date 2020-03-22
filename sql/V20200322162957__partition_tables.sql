@@ -1,7 +1,7 @@
 create schema partitions;
 create table partition_table (
     id bigserial,
-    new_field int
+    new_filed int
 ) partition by range (id);
 
 create table partitions.partition_table_1 partition of partition_table for values from (0) to (10000);

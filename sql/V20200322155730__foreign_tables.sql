@@ -1,4 +1,3 @@
-begin
 create extension postgres_fdw;
 CREATE SCHEMA schema1;
 CREATE SCHEMA schema2;
@@ -45,4 +44,3 @@ CREATE FOREIGN TABLE schema3_table (
     )
     SERVER foreign_server
     OPTIONS (schema_name 'schema3', table_name 'schema_table');
-end;

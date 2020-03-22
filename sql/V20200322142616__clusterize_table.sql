@@ -1,2 +1,2 @@
-CLUSTER public.clustered_table on clustered_table_index;
+CLUSTER public.clustered_table using clustered_table_index;
 analyze public.clustered_table;

@@ -1,0 +1,1 @@
+analyze public.clustered_table;

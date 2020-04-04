@@ -1,0 +1,1 @@
+select * from disabled_autovacuum where id = 1;

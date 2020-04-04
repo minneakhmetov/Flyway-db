@@ -1,0 +1,1 @@
+update disabled_autovacuum set name = 'nvjernvoer';

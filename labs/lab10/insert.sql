@@ -1,0 +1,1 @@
+insert into triggered_table (name) values (654);

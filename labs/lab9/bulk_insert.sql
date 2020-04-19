@@ -1,0 +1,1 @@
+insert into non_prepared_table (name) values ('bfjebja');

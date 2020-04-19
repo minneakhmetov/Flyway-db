@@ -5,7 +5,7 @@ $do$
     declare
         execute_query text := '';
     BEGIN
-        FOR i IN 1..1000000 LOOP
+        FOR i IN 1..10 LOOP
             execute_query := 'insert into table_1 (';
             FOR i IN 1..99 LOOP
                 execute_query := execute_query || 'bigint_' || i || ',';

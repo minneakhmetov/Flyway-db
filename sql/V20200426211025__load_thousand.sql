@@ -1,3 +1,5 @@
+drop view instead_view;
+create view instead_view as select string, sum(number) as number from instead group by string;
 DO
 $do$
     BEGIN

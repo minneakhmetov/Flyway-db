@@ -1,0 +1,1 @@
+select min(a) over(partition by b, c order by b, c) from index_table order by c, b;

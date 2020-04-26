@@ -74,3 +74,4 @@ chmod -R 444 client/*
 
 echo "Client certificates saved in $(pwd)/client"
 
+cp -R ca.pem server* /var/lib/postgresql/12/main/

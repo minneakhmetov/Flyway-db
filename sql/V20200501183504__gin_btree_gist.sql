@@ -30,7 +30,7 @@ create table indexed_3_gist (
     name text
 );
 
-create index btree_index_2 on indexed_2_btree(name);
+create index btree_index_2_2 on indexed_2_btree(name);
 create index gin_index_2 on indexed_2_hash using gin(to_tsvector('english', name));
 create index gist_index_2 on indexed_3_brin using gist(to_tsvector('english', name));
 
@@ -38,7 +38,7 @@ DO
 $do$
     BEGIN
         FOR i IN 1..100000 LOOP
-            insert into indexed_1_btree (name) values (random_string(15));
+            insert into indexed_2_btree (name) values (random_string(15));
             insert into indexed_2_gin (name) values (random_string(15));
             insert into indexed_3_gist (name) values (random_string(15));
         END LOOP;

@@ -1,0 +1,1 @@
+select * from indexed_2_btree where name like 'cat%';

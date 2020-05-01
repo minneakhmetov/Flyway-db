@@ -1,0 +1,1 @@
+select * from indexed_2_gin where name like 'cat%';

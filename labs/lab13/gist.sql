@@ -1,0 +1,1 @@
+select * from indexed_3_gist where name like 'cat%';

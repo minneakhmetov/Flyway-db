@@ -1,0 +1,1 @@
+select * from func_sql('Razil');

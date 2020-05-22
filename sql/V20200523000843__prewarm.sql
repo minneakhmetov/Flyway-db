@@ -46,4 +46,6 @@ $do$;
 
 CREATE EXTENSION pg_prewarm;
 
-SELECT pg_prewarm('table_1', 'table_2', 'table_3')
+SELECT pg_prewarm('new_table_1');
+SELECT pg_prewarm('new_table_2');
+SELECT pg_prewarm('new_table_3');

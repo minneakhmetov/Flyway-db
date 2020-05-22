@@ -1,12 +1,12 @@
-create table table_1 (
+create table new_table_1 (
     id bigserial,
     name text
 );
-create table table_2 (
+create table new_table_2 (
      id bigserial,
      name text
 );
-create table table_3 (
+create table new_table_3 (
      id bigserial,
      name text
 );
@@ -15,9 +15,9 @@ DO
 $do$
     BEGIN
         FOR i IN 1..1000 LOOP
-                insert into table_1 (name) values (random_string(15));
-                insert into table_2 (name) values (random_string(15));
-                insert into table_3 (name) values (random_string(15));
+                insert into new_table_1 (name) values (random_string(15));
+                insert into new_table_2 (name) values (random_string(15));
+                insert into new_table_3 (name) values (random_string(15));
             END LOOP;
     END
 $do$;
@@ -26,9 +26,9 @@ DO
 $do$
     BEGIN
         FOR i IN 1..10000 LOOP
-                insert into table_1 (name) values (random_string(15));
-                insert into table_2 (name) values (random_string(15));
-                insert into table_3 (name) values (random_string(15));
+                insert into new_table_1 (name) values (random_string(15));
+                insert into new_table_2 (name) values (random_string(15));
+                insert into new_table_3 (name) values (random_string(15));
             END LOOP;
     END
 $do$;
@@ -37,9 +37,9 @@ DO
 $do$
     BEGIN
         FOR i IN 1..100000 LOOP
-                insert into table_1 (name) values (random_string(15));
-                insert into table_2 (name) values (random_string(15));
-                insert into table_3 (name) values (random_string(15));
+                insert into new_table_1 (name) values (random_string(15));
+                insert into new_table_2 (name) values (random_string(15));
+                insert into new_table_3 (name) values (random_string(15));
             END LOOP;
     END
 $do$;
